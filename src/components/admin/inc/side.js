@@ -25,6 +25,12 @@ function Side(props) {
                         <span className="nav-text">Home</span>
                     </Link>
                 </Menu.Item>
+                <Menu.Item key="2" >
+                    <Link to="/stock_control">
+                        <InboxOutlined />
+                        <span className="nav-text">Stock Control</span>
+                    </Link>
+                </Menu.Item>
                 <Menu.Item key="3">
                     <Link to="/products">
                         <TagOutlined />
