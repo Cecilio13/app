@@ -7,6 +7,7 @@ import {
     InboxOutlined,
     TagOutlined,
     UserOutlined,
+    UserAddOutlined
 } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 const { Header, Footer, Sider, Content } = Layout;
@@ -23,6 +24,12 @@ function Side(props) {
                     <Link to="/">
                         <HomeOutlined />
                         <span className="nav-text">Home</span>
+                    </Link>
+                </Menu.Item>
+                <Menu.Item key="2" >
+                    <Link to="/users">
+                        <UserAddOutlined />
+                        <span className="nav-text">Staff</span>
                     </Link>
                 </Menu.Item>
                 <Menu.Item key="3">
