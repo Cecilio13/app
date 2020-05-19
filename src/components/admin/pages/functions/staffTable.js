@@ -53,23 +53,6 @@ function StaffTable(){
             key: 'name',
             width: '15%', 
             align: 'center',
-            filters: [
-                {
-                    text: 'James',
-                    value: 'James'
-                },
-                {
-                    text: 'Disabled',
-                    value: 'Disabled'
-                },
-                {
-                    text: 'By position',
-                    value: 'By position'
-                }
-            ],
-            filterMultiple: false,
-            onFilter: (value, record) => record.name.indexOf(value) === 0,
-            
         },     
         {
             title: 'Position',

@@ -27,9 +27,9 @@ function Side(props) {
                     </Link>
                 </Menu.Item>
                 <Menu.Item key="2" >
-                    <Link to="/users">
-                        <UserAddOutlined />
-                        <span className="nav-text">Staff</span>
+                    <Link to="/stock_control">
+                        <InboxOutlined />
+                        <span className="nav-text">Stock Control</span>
                     </Link>
                 </Menu.Item>
                 <Menu.Item key="3">
@@ -48,6 +48,12 @@ function Side(props) {
                     <Link to="/analytics">
                         <BarChartOutlined />
                         <span className="nav-text">Analytics</span>
+                    </Link>
+                </Menu.Item>
+                <Menu.Item key ="6">
+                    <Link to="/users">
+                        <UserAddOutlined />
+                        <span className="nav-text">Staff</span>
                     </Link>
                 </Menu.Item>
 

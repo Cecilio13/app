@@ -14,6 +14,7 @@ import AdminHome from '../components/admin/pages/home';
 import AdminAnalytics from '../components/admin/pages/analytics';
 import AdminCustomers from '../components/admin/pages/customers';
 import AdminProducts from '../components/admin/pages/products';
+import AdminStockControl from '../components/admin/pages/stock_control';
 import AdminUsers from '../components/admin/pages/users';
 
 import axios from 'axios';
@@ -36,8 +37,8 @@ const RouteController = ({ setNav, orders, users, get_orders, ABorders }) => (
                 <Route key={1} exact path="/" >
                     <AdminHome no={1} />
                 </Route>
-                <Route key={2} exact path="/users" >
-                    <AdminUsers no={2} />
+                <Route key={2} exact path="/stock_control" >
+                    <AdminStockControl no={2} />
                 </Route>
                 <Route key={3} exact path="/products">
                     <AdminProducts no={3} />
@@ -47,6 +48,9 @@ const RouteController = ({ setNav, orders, users, get_orders, ABorders }) => (
                 </Route>
                 <Route key={5} exact path="/analytics">
                     <AdminAnalytics no={5} />
+                </Route>
+                <Route key={6} exact path="/users" >
+                    <AdminUsers no={6} />
                 </Route>
             </Switch>
         </div>
